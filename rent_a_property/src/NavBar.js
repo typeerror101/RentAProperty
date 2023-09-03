@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/navbar.css';
 import {Link, useMatch, useResolvedPath} from 'react-router-dom';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Logo from './images/logo.png';
 
 
 export default function NavBar() {
@@ -9,7 +10,7 @@ export default function NavBar() {
     <div>
       <nav className='nav'>
         <ul className='nav-left'>
-            <Link to="/" className='logo' >Estatery</Link>
+            <Link to="/" className='logo' ><img alt='logo' src= {Logo} width="150" height="150"></img></Link>
             <CustomLink className='rent' to='/Rent'>Rent</CustomLink>
             <CustomLink to='/Buy'>Buy</CustomLink>
             <CustomLink to='/Sell'>Sell</CustomLink>
